@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent';
+const GEMINI_API_URL =
+'https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent';
 
 // Explain DSA Concept
 export const explainConcept = async (req, res) => {
@@ -41,7 +42,10 @@ Provide a detailed explanation with:
       explanation,
     });
   } catch (error) {
-    console.error('Gemini API Error:', error.message);
+    console.error(
+  'Gemini API Error:',
+  error.response?.data || error.message
+);
     res.status(500).json({
       message: 'Failed to generate explanation',
       error: error.message,
@@ -79,7 +83,7 @@ Provide 5 problem recommendations in JSON format:
 
 Ensure recommendations focus on weak topics and progressively increase in difficulty.
 Return ONLY the JSON array, no additional text.`;
-
+console.log("API Key Loaded:", !!process.env.GEMINI_API_KEY);
     const response = await axios.post(
       `${GEMINI_API_URL}?key=${process.env.GEMINI_API_KEY}`,
       {

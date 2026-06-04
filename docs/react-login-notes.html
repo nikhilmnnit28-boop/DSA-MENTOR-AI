@@ -1,0 +1,516 @@
+<h1 id="dsa-mentor-ai---react-login-page-notes">DSA Mentor AI - React
+Login Page Notes</h1>
+<p>These notes explain the login page in simple English.</p>
+<h2 id="what-did-we-build">1. What Did We Build?</h2>
+<p>We built a basic login page using React.</p>
+<p>The login page has:</p>
+<ul>
+<li>A project heading: DSA Mentor AI</li>
+<li>An email input</li>
+<li>A password input</li>
+<li>A login button</li>
+<li>A small validation message if the user leaves fields empty</li>
+</ul>
+<p>This is only the frontend login page.</p>
+<p>It does not check real users yet.</p>
+<p>Real authentication will come later when we build the backend.</p>
+<h2 id="how-does-the-react-app-start">2. How Does The React App
+Start?</h2>
+<p>The app starts in this order:</p>
+<pre class="text"><code>index.html -&gt; main.jsx -&gt; App.jsx -&gt; Login.jsx</code></pre>
+<p>Think of it like this:</p>
+<ul>
+<li><code>index.html</code> gives React a place to attach the app.</li>
+<li><code>main.jsx</code> starts React.</li>
+<li><code>App.jsx</code> loads the main page.</li>
+<li><code>Login.jsx</code> shows the login form.</li>
+</ul>
+<h2 id="what-is-index.html">3. What Is <code>index.html</code>?</h2>
+<p><code>index.html</code> is the main HTML file.</p>
+<p>Inside it, we have:</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;root&quot;</span><span class="dt">&gt;&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code></pre></div>
+<p>React puts our whole app inside this <code>root</code> div.</p>
+<p>Interview answer:</p>
+<blockquote>
+<p><code>index.html</code> contains the root element where the React
+application is mounted.</p>
+</blockquote>
+<h2 id="what-is-main.jsx">4. What Is <code>main.jsx</code>?</h2>
+<p><code>main.jsx</code> is the entry point of the React app.</p>
+<p>It connects React with the <code>root</code> div from
+<code>index.html</code>.</p>
+<p>Important code:</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode jsx"><code class="sourceCode javascriptreact"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">createRoot</span>(<span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">&#39;root&#39;</span>))<span class="op">.</span><span class="fu">render</span>(<span class="fu">&lt;App</span> <span class="fu">/&gt;</span>)</span></code></pre></div>
+<p>Meaning:</p>
+<ul>
+<li>Find the HTML element with id <code>root</code>.</li>
+<li>Create a React root there.</li>
+<li>Render the <code>App</code> component inside it.</li>
+</ul>
+<p>Interview answer:</p>
+<blockquote>
+<p><code>main.jsx</code> is the entry file that renders the root React
+component into the DOM.</p>
+</blockquote>
+<h2 id="what-is-a-react-component">5. What Is A React Component?</h2>
+<p>A component is a reusable part of the user interface.</p>
+<p>In simple words:</p>
+<pre class="text"><code>Component = JavaScript function that returns UI</code></pre>
+<p>Example:</p>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode jsx"><code class="sourceCode javascriptreact"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> <span class="kw">function</span> <span class="fu">Login</span>() {</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return </span><span class="kw">&lt;h1&gt;</span>DSA Mentor AI<span class="kw">&lt;/h1&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>Here, <code>Login</code> is a component.</p>
+<p>Interview answer:</p>
+<blockquote>
+<p>A React component is a reusable function or class that returns JSX
+and represents part of the UI.</p>
+</blockquote>
+<h2 id="what-is-jsx">6. What Is JSX?</h2>
+<p>JSX lets us write HTML-like code inside JavaScript.</p>
+<p>Example:</p>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode jsx"><code class="sourceCode javascriptreact"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;h1&gt;</span>DSA Mentor AI<span class="kw">&lt;/h1&gt;</span></span></code></pre></div>
+<p>This looks like HTML, but React uses it inside JavaScript.</p>
+<p>Interview answer:</p>
+<blockquote>
+<p>JSX is a syntax extension for JavaScript that allows us to write UI
+structure inside React components.</p>
+</blockquote>
+<h2 id="what-is-usestate">7. What Is <code>useState</code>?</h2>
+<p><code>useState</code> is used to store values that can change.</p>
+<p>In our login page, these values can change:</p>
+<ul>
+<li>Email</li>
+<li>Password</li>
+<li>Error message</li>
+</ul>
+<p>Code:</p>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode jsx"><code class="sourceCode javascriptreact"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> [email<span class="op">,</span> setEmail] <span class="op">=</span> <span class="fu">useState</span>(<span class="st">&#39;&#39;</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> [password<span class="op">,</span> setPassword] <span class="op">=</span> <span class="fu">useState</span>(<span class="st">&#39;&#39;</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> [error<span class="op">,</span> setError] <span class="op">=</span> <span class="fu">useState</span>(<span class="st">&#39;&#39;</span>)</span></code></pre></div>
+<p>Meaning:</p>
+<ul>
+<li><code>email</code> stores the current email.</li>
+<li><code>setEmail</code> updates the email.</li>
+<li><code>password</code> stores the current password.</li>
+<li><code>setPassword</code> updates the password.</li>
+<li><code>error</code> stores the current error message.</li>
+<li><code>setError</code> updates the error message.</li>
+</ul>
+<p>Interview answer:</p>
+<blockquote>
+<p><code>useState</code> is a React Hook used to store and update state
+in a functional component. When state changes, React re-renders the
+component.</p>
+</blockquote>
+<h2 id="what-is-a-controlled-input">8. What Is A Controlled Input?</h2>
+<p>In our form, React controls the input value.</p>
+<p>Example:</p>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode jsx"><code class="sourceCode javascriptreact"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;input</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="ot">value</span><span class="op">=</span><span class="va">{</span>email<span class="va">}</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="ot">onChange</span><span class="op">=</span><span class="va">{</span>(<span class="bu">event</span>) <span class="kw">=&gt;</span> <span class="fu">setEmail</span>(<span class="bu">event</span><span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="at">value</span>)<span class="va">}</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="kw">/&gt;</span></span></code></pre></div>
+<p>Meaning:</p>
+<ul>
+<li><code>value={email}</code> means the input value comes from React
+state.</li>
+<li><code>onChange</code> runs when the user types.</li>
+<li><code>setEmail(event.target.value)</code> saves the typed value in
+React state.</li>
+</ul>
+<p>Interview answer:</p>
+<blockquote>
+<p>A controlled input is a form input whose value is controlled by React
+state.</p>
+</blockquote>
+<h2 id="what-is-an-event">9. What Is An Event?</h2>
+<p>An event is an action done by the user.</p>
+<p>Examples:</p>
+<ul>
+<li>Typing in an input</li>
+<li>Clicking a button</li>
+<li>Submitting a form</li>
+</ul>
+<p>In our login page:</p>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode jsx"><code class="sourceCode javascriptreact"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>onChange<span class="op">=</span>{(<span class="bu">event</span>) <span class="kw">=&gt;</span> <span class="fu">setEmail</span>(<span class="bu">event</span><span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="at">value</span>)}</span></code></pre></div>
+<p>This runs when the user types.</p>
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode jsx"><code class="sourceCode javascriptreact"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>onSubmit<span class="op">=</span>{handleSubmit}</span></code></pre></div>
+<p>This runs when the form is submitted.</p>
+<h2 id="why-do-we-use-event.preventdefault">10. Why Do We Use
+<code>event.preventDefault()</code>?</h2>
+<p>Normally, when a form is submitted, the browser refreshes the
+page.</p>
+<p>In React, we do not want the page to refresh.</p>
+<p>So we write:</p>
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode jsx"><code class="sourceCode javascriptreact"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="bu">event</span><span class="op">.</span><span class="fu">preventDefault</span>()</span></code></pre></div>
+<p>Interview answer:</p>
+<blockquote>
+<p><code>preventDefault()</code> stops the default browser form
+submission so React can handle the form without refreshing the page.</p>
+</blockquote>
+<h2 id="how-does-login-submit-work">11. How Does Login Submit Work?</h2>
+<p>Our submit function does four things:</p>
+<ol type="1">
+<li>Stops page refresh.</li>
+<li>Clears old error messages.</li>
+<li>Checks if email or password is empty.</li>
+<li>Shows an alert if the form is valid.</li>
+</ol>
+<p>Code:</p>
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode jsx"><code class="sourceCode javascriptreact"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">handleSubmit</span>(<span class="bu">event</span>) {</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">event</span><span class="op">.</span><span class="fu">preventDefault</span>()</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">setError</span>(<span class="st">&#39;&#39;</span>)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span>email <span class="op">||</span> <span class="op">!</span>password) {</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">setError</span>(<span class="st">&#39;Please enter both email and password.&#39;</span>)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&#39;Login submitted:&#39;</span><span class="op">,</span> { email<span class="op">,</span> password })</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">alert</span>(<span class="st">&#39;Login form works. We will connect it to the backend later.&#39;</span>)</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>Important point:</p>
+<p>This is not real login yet.</p>
+<p>For real login, we will send the email and password to the
+backend.</p>
+<h2 id="what-is-conditional-rendering">12. What Is Conditional
+Rendering?</h2>
+<p>Conditional rendering means showing something only when a condition
+is true.</p>
+<p>Code:</p>
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode jsx"><code class="sourceCode javascriptreact"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>{error <span class="op">&amp;&amp; </span><span class="kw">&lt;p</span> <span class="ot">className</span><span class="op">=</span><span class="st">&quot;error-message&quot;</span><span class="kw">&gt;</span><span class="va">{</span>error<span class="va">}</span><span class="kw">&lt;/p&gt;</span>}</span></code></pre></div>
+<p>Meaning:</p>
+<ul>
+<li>If <code>error</code> has text, show the error message.</li>
+<li>If <code>error</code> is empty, show nothing.</li>
+</ul>
+<p>Interview answer:</p>
+<blockquote>
+<p>Conditional rendering means displaying UI based on a condition.</p>
+</blockquote>
+<h2 id="why-use-htmlfor-instead-of-for">13. Why Use <code>htmlFor</code>
+Instead Of <code>for</code>?</h2>
+<p>In normal HTML, we write:</p>
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode html"><code class="sourceCode html"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">label</span><span class="ot"> for</span><span class="op">=</span><span class="st">&quot;email&quot;</span><span class="dt">&gt;</span></span></code></pre></div>
+<p>In React JSX, we write:</p>
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode jsx"><code class="sourceCode javascriptreact"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;label</span> <span class="ot">htmlFor</span><span class="op">=</span><span class="st">&quot;email&quot;</span><span class="kw">&gt;</span></span></code></pre></div>
+<p>Reason:</p>
+<p><code>for</code> is a reserved word in JavaScript, so React uses
+<code>htmlFor</code>.</p>
+<h2 id="what-should-i-say-in-an-interview">14. What Should I Say In An
+Interview?</h2>
+<p>You can explain this project like this:</p>
+<blockquote>
+<p>I built a React login form using functional components and hooks. I
+used <code>useState</code> to store the email, password, and error
+message. The form uses controlled inputs, so the input values are
+managed by React state. I used <code>onChange</code> to update state
+when the user types, and <code>onSubmit</code> to handle form
+submission. I also used <code>preventDefault()</code> to stop page
+refresh and conditional rendering to show validation errors.</p>
+</blockquote>
+<h2 id="what-is-done-and-what-is-not-done">15. What Is Done And What Is
+Not Done?</h2>
+<p>Done:</p>
+<ul>
+<li>Login UI</li>
+<li>Email input</li>
+<li>Password input</li>
+<li>Basic empty field validation</li>
+<li>React state handling</li>
+<li>Form submit handling</li>
+</ul>
+<p>Not done yet:</p>
+<ul>
+<li>Signup page</li>
+<li>Backend</li>
+<li>MongoDB</li>
+<li>Real authentication</li>
+<li>JWT token</li>
+<li>Protected dashboard</li>
+</ul>
+<h2 id="next-step">16. Next Step</h2>
+<p>Next, we should build the Signup page.</p>
+<p>Signup will use the same concepts:</p>
+<ul>
+<li>Components</li>
+<li>JSX</li>
+<li><code>useState</code></li>
+<li>Controlled inputs</li>
+<li>Events</li>
+<li>Form validation</li>
+<li>Conditional rendering</li>
+</ul>
+<h1 id="signup-page-notes">Signup Page Notes</h1>
+<h2 id="what-did-we-build-1">1. What Did We Build?</h2>
+<p>We added a Signup page.</p>
+<p>The Signup page has:</p>
+<ul>
+<li>Name input</li>
+<li>Email input</li>
+<li>Password input</li>
+<li>Confirm password input</li>
+<li>Signup button</li>
+<li>Validation messages</li>
+</ul>
+<p>This is still frontend only.</p>
+<p>The form does not create a real account yet.</p>
+<p>Real account creation will happen later when we connect the backend
+and MongoDB.</p>
+<h2 id="why-did-we-add-signup">2. Why Did We Add Signup?</h2>
+<p>In most full-stack apps, users need two authentication screens:</p>
+<ul>
+<li>Login: for existing users</li>
+<li>Signup: for new users</li>
+</ul>
+<p>This is why we created a separate <code>Signup.jsx</code>
+component.</p>
+<h2 id="what-new-file-did-we-add">3. What New File Did We Add?</h2>
+<p>We added:</p>
+<pre class="text"><code>frontend/src/pages/Signup.jsx</code></pre>
+<p>This file contains the Signup page UI and form logic.</p>
+<h2 id="why-is-signup-a-separate-component">4. Why Is Signup A Separate
+Component?</h2>
+<p>We keep Login and Signup separate because each page has different
+fields and different validation.</p>
+<p>This makes the code easier to read and maintain.</p>
+<p>Interview answer:</p>
+<blockquote>
+<p>I separated Login and Signup into different components because each
+screen has its own UI and logic. This improves readability and
+maintainability.</p>
+</blockquote>
+<h2 id="what-is-happening-in-app.jsx">5. What Is Happening In
+<code>App.jsx</code>?</h2>
+<p>We used state in <code>App.jsx</code> to decide which page to
+show.</p>
+<p>Code idea:</p>
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode jsx"><code class="sourceCode javascriptreact"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> [authPage<span class="op">,</span> setAuthPage] <span class="op">=</span> <span class="fu">useState</span>(<span class="st">&#39;login&#39;</span>)</span></code></pre></div>
+<p>Meaning:</p>
+<ul>
+<li>If <code>authPage</code> is <code>login</code>, show the Login
+page.</li>
+<li>If <code>authPage</code> is <code>signup</code>, show the Signup
+page.</li>
+</ul>
+<p>This is a simple beginner-friendly way to switch screens before
+learning React Router.</p>
+<h2 id="what-are-props">6. What Are Props?</h2>
+<p>Props are values passed from one component to another.</p>
+<p>Example:</p>
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode jsx"><code class="sourceCode javascriptreact"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">&lt;Login</span> <span class="ot">onShowSignup</span><span class="op">=</span><span class="va">{</span>() <span class="kw">=&gt;</span> <span class="fu">setAuthPage</span>(<span class="st">&#39;signup&#39;</span>)<span class="va">}</span> <span class="fu">/&gt;</span></span></code></pre></div>
+<p>Here, <code>onShowSignup</code> is a prop.</p>
+<p>It allows the Login component to tell <code>App.jsx</code> to show
+the Signup page.</p>
+<p>Interview answer:</p>
+<blockquote>
+<p>Props are used to pass data or functions from a parent component to a
+child component.</p>
+</blockquote>
+<h2 id="parent-and-child-components">7. Parent And Child Components</h2>
+<p>In our app:</p>
+<pre class="text"><code>App.jsx = parent component
+Login.jsx = child component
+Signup.jsx = child component</code></pre>
+<p><code>App.jsx</code> controls which child component is visible.</p>
+<p>This is a common React pattern.</p>
+<h2 id="signup-form-state">8. Signup Form State</h2>
+<p>In Signup, we used state for each input:</p>
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode jsx"><code class="sourceCode javascriptreact"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> [name<span class="op">,</span> setName] <span class="op">=</span> <span class="fu">useState</span>(<span class="st">&#39;&#39;</span>)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> [email<span class="op">,</span> setEmail] <span class="op">=</span> <span class="fu">useState</span>(<span class="st">&#39;&#39;</span>)</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> [password<span class="op">,</span> setPassword] <span class="op">=</span> <span class="fu">useState</span>(<span class="st">&#39;&#39;</span>)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> [confirmPassword<span class="op">,</span> setConfirmPassword] <span class="op">=</span> <span class="fu">useState</span>(<span class="st">&#39;&#39;</span>)</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> [error<span class="op">,</span> setError] <span class="op">=</span> <span class="fu">useState</span>(<span class="st">&#39;&#39;</span>)</span></code></pre></div>
+<p>Each input needs its own state because each value can change
+independently.</p>
+<h2 id="signup-validation">9. Signup Validation</h2>
+<p>We added three validation checks:</p>
+<ol type="1">
+<li>All fields must be filled.</li>
+<li>Password must be at least 6 characters.</li>
+<li>Password and confirm password must match.</li>
+</ol>
+<p>This validation happens before sending data to the backend.</p>
+<p>Important:</p>
+<p>Frontend validation improves user experience, but backend validation
+is also required for security.</p>
+<p>Interview answer:</p>
+<blockquote>
+<p>I added frontend validation to give quick feedback to the user, but I
+know backend validation is also necessary because frontend code can be
+bypassed.</p>
+</blockquote>
+<h2 id="what-is-done-now">10. What Is Done Now?</h2>
+<p>Done:</p>
+<ul>
+<li>Login UI</li>
+<li>Signup UI</li>
+<li>Switching between Login and Signup</li>
+<li>Basic form validation</li>
+<li>Reusable auth styling</li>
+</ul>
+<p>Not done yet:</p>
+<ul>
+<li>Real signup API</li>
+<li>Real login API</li>
+<li>Password hashing</li>
+<li>JWT authentication</li>
+<li>MongoDB user storage</li>
+</ul>
+<h2 id="interview-summary-for-signup">11. Interview Summary For
+Signup</h2>
+<p>You can say:</p>
+<blockquote>
+<p>I created a Signup component with controlled inputs for name, email,
+password, and confirm password. I used <code>useState</code> to manage
+form values and validation errors. I also passed functions as props from
+the parent <code>App</code> component to switch between Login and Signup
+screens. This helped me understand component communication, props, and
+form validation in React.</p>
+</blockquote>
+<h1 id="dashboard-ui-notes">Dashboard UI Notes</h1>
+<h2 id="what-did-we-build-after-login">1. What Did We Build After
+Login?</h2>
+<p>After Login and Signup, we built the Dashboard page.</p>
+<p>The Dashboard is the page a user sees after logging in.</p>
+<p>It shows:</p>
+<ul>
+<li>Total solved problems</li>
+<li>Completion percentage</li>
+<li>Current focus topic</li>
+<li>Topic-wise progress</li>
+<li>Recommended problems</li>
+<li>Recent activity</li>
+</ul>
+<p>For now, this data is sample frontend data.</p>
+<p>Later, this data will come from MongoDB through the backend API.</p>
+<h2 id="why-dashboard-comes-after-login">2. Why Dashboard Comes After
+Login</h2>
+<p>In a full-stack app, authentication decides whether a user can access
+private pages.</p>
+<p>Public pages:</p>
+<ul>
+<li>Login</li>
+<li>Signup</li>
+</ul>
+<p>Private pages:</p>
+<ul>
+<li>Dashboard</li>
+<li>Problem tracker</li>
+<li>Analytics</li>
+<li>AI assistant</li>
+</ul>
+<p>For now, we simulate login by changing state in React.</p>
+<p>Later, real login will use JWT tokens from the backend.</p>
+<h2 id="what-new-file-did-we-add-1">3. What New File Did We Add?</h2>
+<p>We added:</p>
+<pre class="text"><code>frontend/src/pages/Dashboard.jsx</code></pre>
+<p>This file contains the dashboard UI.</p>
+<h2 id="what-new-concept-did-we-learn">4. What New Concept Did We
+Learn?</h2>
+<p>We learned conditional page rendering.</p>
+<p>In <code>App.jsx</code>, we used:</p>
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode jsx"><code class="sourceCode javascriptreact"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> [isLoggedIn<span class="op">,</span> setIsLoggedIn] <span class="op">=</span> <span class="fu">useState</span>(<span class="kw">false</span>)</span></code></pre></div>
+<p>Meaning:</p>
+<ul>
+<li>If <code>isLoggedIn</code> is <code>false</code>, show Login or
+Signup.</li>
+<li>If <code>isLoggedIn</code> is <code>true</code>, show
+Dashboard.</li>
+</ul>
+<p>Interview answer:</p>
+<blockquote>
+<p>I used React state to conditionally render the Dashboard after
+successful login or signup. This simulates protected page behavior
+before adding real authentication.</p>
+</blockquote>
+<h2 id="why-are-we-using-sample-data">5. Why Are We Using Sample
+Data?</h2>
+<p>We are using sample data because the backend and database are not
+ready yet.</p>
+<p>This is a common development approach.</p>
+<p>First we build the frontend layout with sample data.</p>
+<p>Then we replace sample data with real API data later.</p>
+<p>Interview answer:</p>
+<blockquote>
+<p>I first built the Dashboard with static sample data to complete the
+UI structure. Later, I will replace that data with API responses from
+the backend.</p>
+</blockquote>
+<h2 id="what-is-.map-doing">6. What Is <code>.map()</code> Doing?</h2>
+<p>In Dashboard, we use <code>.map()</code> to display repeated UI.</p>
+<p>Example:</p>
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode jsx"><code class="sourceCode javascriptreact"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>topicProgress<span class="op">.</span><span class="fu">map</span>((topic) <span class="kw">=&gt;</span> {</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return </span><span class="kw">&lt;article</span> <span class="ot">key</span><span class="op">=</span><span class="va">{</span>topic<span class="op">.</span><span class="at">name</span><span class="va">}</span><span class="kw">&gt;</span>...<span class="kw">&lt;/article&gt;</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div>
+<p>Meaning:</p>
+<ul>
+<li>Take each topic from the array.</li>
+<li>Create one UI row for that topic.</li>
+</ul>
+<p>Interview answer:</p>
+<blockquote>
+<p><code>.map()</code> is used in React to render lists by converting
+each item in an array into JSX.</p>
+</blockquote>
+<h2 id="why-do-we-use-key-in-lists">7. Why Do We Use <code>key</code> In
+Lists?</h2>
+<p>React needs a <code>key</code> when rendering lists.</p>
+<p>Example:</p>
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode jsx"><code class="sourceCode javascriptreact"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;article</span> <span class="ot">key</span><span class="op">=</span><span class="va">{</span>topic<span class="op">.</span><span class="at">name</span><span class="va">}</span><span class="kw">&gt;</span></span></code></pre></div>
+<p>The key helps React identify which list item changed.</p>
+<p>Interview answer:</p>
+<blockquote>
+<p>A key helps React efficiently update list items by giving each
+rendered item a stable identity.</p>
+</blockquote>
+<h2 id="what-is-done-now-1">8. What Is Done Now?</h2>
+<p>Done:</p>
+<ul>
+<li>Login page</li>
+<li>Signup page</li>
+<li>Dashboard page</li>
+<li>Frontend-only login simulation</li>
+<li>Logout button</li>
+<li>Basic progress UI</li>
+<li>Recommended problems UI</li>
+</ul>
+<p>Not done yet:</p>
+<ul>
+<li>Real authentication</li>
+<li>Backend API</li>
+<li>MongoDB</li>
+<li>Problem tracker CRUD</li>
+<li>Real analytics</li>
+<li>Gemini AI integration</li>
+</ul>
+<h2 id="interview-summary-for-dashboard">9. Interview Summary For
+Dashboard</h2>
+<p>You can say:</p>
+<blockquote>
+<p>I built a Dashboard component that appears after a successful login
+or signup. I used React state in <code>App.jsx</code> to simulate
+authentication and conditionally render the Dashboard. The Dashboard
+currently uses static sample data for progress, recommendations, and
+activity. I used <code>.map()</code> to render repeated UI lists and
+added a logout button to return to the login flow.</p>
+</blockquote>

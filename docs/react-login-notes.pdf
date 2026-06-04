@@ -1,0 +1,2206 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R 21 0 R 23 0 R 25 0 R 27 0 R 29 0 R 31 0 R 33 0 R 35 0 R 37 0 R] /Count 16 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Length 2410 >>
+stream
+BT
+/F1 22 Tf
+54 760 Td (DSA Mentor AI - React Login Page Notes) Tj
+-54 -760 Td
+/F3 10 Tf
+54 732 Td () Tj
+-54 -732 Td
+/F3 10 Tf
+54 716 Td (These notes explain the login page in simple English.) Tj
+-54 -716 Td
+/F3 10 Tf
+54 700 Td () Tj
+-54 -700 Td
+/F1 15 Tf
+54 684 Td (1. What Did We Build?) Tj
+-54 -684 Td
+/F3 10 Tf
+54 660 Td () Tj
+-54 -660 Td
+/F3 10 Tf
+54 644 Td (We built a basic login page using React.) Tj
+-54 -644 Td
+/F3 10 Tf
+54 628 Td () Tj
+-54 -628 Td
+/F3 10 Tf
+54 612 Td (The login page has:) Tj
+-54 -612 Td
+/F3 10 Tf
+54 596 Td () Tj
+-54 -596 Td
+/F3 10 Tf
+54 580 Td (- A project heading: DSA Mentor AI) Tj
+-54 -580 Td
+/F3 10 Tf
+54 564 Td (- An email input) Tj
+-54 -564 Td
+/F3 10 Tf
+54 548 Td (- A password input) Tj
+-54 -548 Td
+/F3 10 Tf
+54 532 Td (- A login button) Tj
+-54 -532 Td
+/F3 10 Tf
+54 516 Td (- A small validation message if the user leaves fields empty) Tj
+-54 -516 Td
+/F3 10 Tf
+54 500 Td () Tj
+-54 -500 Td
+/F3 10 Tf
+54 484 Td (This is only the frontend login page.) Tj
+-54 -484 Td
+/F3 10 Tf
+54 468 Td () Tj
+-54 -468 Td
+/F3 10 Tf
+54 452 Td (It does not check real users yet.) Tj
+-54 -452 Td
+/F3 10 Tf
+54 436 Td () Tj
+-54 -436 Td
+/F3 10 Tf
+54 420 Td (Real authentication will come later when we build the backend.) Tj
+-54 -420 Td
+/F3 10 Tf
+54 404 Td () Tj
+-54 -404 Td
+/F1 15 Tf
+54 388 Td (2. How Does The React App Start?) Tj
+-54 -388 Td
+/F3 10 Tf
+54 364 Td () Tj
+-54 -364 Td
+/F3 10 Tf
+54 348 Td (The app starts in this order:) Tj
+-54 -348 Td
+/F3 10 Tf
+54 332 Td () Tj
+-54 -332 Td
+/F3 10 Tf
+54 316 Td () Tj
+-54 -316 Td
+/F2 9 Tf
+64 300 Td (index.html -> main.jsx -> App.jsx -> Login.jsx) Tj
+-64 -300 Td
+/F3 10 Tf
+54 286 Td () Tj
+-54 -286 Td
+/F3 10 Tf
+54 270 Td () Tj
+-54 -270 Td
+/F3 10 Tf
+54 254 Td (Think of it like this:) Tj
+-54 -254 Td
+/F3 10 Tf
+54 238 Td () Tj
+-54 -238 Td
+/F3 10 Tf
+54 222 Td (- index.html gives React a place to attach the app.) Tj
+-54 -222 Td
+/F3 10 Tf
+54 206 Td (- main.jsx starts React.) Tj
+-54 -206 Td
+/F3 10 Tf
+54 190 Td (- App.jsx loads the main page.) Tj
+-54 -190 Td
+/F3 10 Tf
+54 174 Td (- Login.jsx shows the login form.) Tj
+-54 -174 Td
+/F3 10 Tf
+54 158 Td () Tj
+-54 -158 Td
+/F1 15 Tf
+54 142 Td (3. What Is index.html?) Tj
+-54 -142 Td
+/F3 10 Tf
+54 118 Td () Tj
+-54 -118 Td
+/F3 10 Tf
+54 102 Td (index.html is the main HTML file.) Tj
+-54 -102 Td
+/F3 10 Tf
+54 86 Td () Tj
+-54 -86 Td
+/F3 10 Tf
+54 70 Td (Inside it, we have:) Tj
+-54 -70 Td
+/F3 9 Tf
+520 28 Td (1) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 2365 >>
+stream
+BT
+/F3 10 Tf
+54 760 Td () Tj
+-54 -760 Td
+/F3 10 Tf
+54 744 Td () Tj
+-54 -744 Td
+/F2 9 Tf
+64 728 Td (<div id="root"></div>) Tj
+-64 -728 Td
+/F3 10 Tf
+54 714 Td () Tj
+-54 -714 Td
+/F3 10 Tf
+54 698 Td () Tj
+-54 -698 Td
+/F3 10 Tf
+54 682 Td (React puts our whole app inside this root div.) Tj
+-54 -682 Td
+/F3 10 Tf
+54 666 Td () Tj
+-54 -666 Td
+/F3 10 Tf
+54 650 Td (Interview answer:) Tj
+-54 -650 Td
+/F3 10 Tf
+54 634 Td () Tj
+-54 -634 Td
+/F3 10 Tf
+66 618 Td (index.html contains the root element where the React application is mounted.) Tj
+-66 -618 Td
+/F3 10 Tf
+54 602 Td () Tj
+-54 -602 Td
+/F1 15 Tf
+54 586 Td (4. What Is main.jsx?) Tj
+-54 -586 Td
+/F3 10 Tf
+54 562 Td () Tj
+-54 -562 Td
+/F3 10 Tf
+54 546 Td (main.jsx is the entry point of the React app.) Tj
+-54 -546 Td
+/F3 10 Tf
+54 530 Td () Tj
+-54 -530 Td
+/F3 10 Tf
+54 514 Td (It connects React with the root div from index.html.) Tj
+-54 -514 Td
+/F3 10 Tf
+54 498 Td () Tj
+-54 -498 Td
+/F3 10 Tf
+54 482 Td (Important code:) Tj
+-54 -482 Td
+/F3 10 Tf
+54 466 Td () Tj
+-54 -466 Td
+/F3 10 Tf
+54 450 Td () Tj
+-54 -450 Td
+/F2 9 Tf
+64 434 Td (createRoot\(document.getElementById\('root'\)\).render\(<App />\)) Tj
+-64 -434 Td
+/F3 10 Tf
+54 420 Td () Tj
+-54 -420 Td
+/F3 10 Tf
+54 404 Td () Tj
+-54 -404 Td
+/F3 10 Tf
+54 388 Td (Meaning:) Tj
+-54 -388 Td
+/F3 10 Tf
+54 372 Td () Tj
+-54 -372 Td
+/F3 10 Tf
+54 356 Td (- Find the HTML element with id root.) Tj
+-54 -356 Td
+/F3 10 Tf
+54 340 Td (- Create a React root there.) Tj
+-54 -340 Td
+/F3 10 Tf
+54 324 Td (- Render the App component inside it.) Tj
+-54 -324 Td
+/F3 10 Tf
+54 308 Td () Tj
+-54 -308 Td
+/F3 10 Tf
+54 292 Td (Interview answer:) Tj
+-54 -292 Td
+/F3 10 Tf
+54 276 Td () Tj
+-54 -276 Td
+/F3 10 Tf
+66 260 Td (main.jsx is the entry file that renders the root React component into the DOM.) Tj
+-66 -260 Td
+/F3 10 Tf
+54 244 Td () Tj
+-54 -244 Td
+/F1 15 Tf
+54 228 Td (5. What Is A React Component?) Tj
+-54 -228 Td
+/F3 10 Tf
+54 204 Td () Tj
+-54 -204 Td
+/F3 10 Tf
+54 188 Td (A component is a reusable part of the user interface.) Tj
+-54 -188 Td
+/F3 10 Tf
+54 172 Td () Tj
+-54 -172 Td
+/F3 10 Tf
+54 156 Td (In simple words:) Tj
+-54 -156 Td
+/F3 10 Tf
+54 140 Td () Tj
+-54 -140 Td
+/F3 10 Tf
+54 124 Td () Tj
+-54 -124 Td
+/F2 9 Tf
+64 108 Td (Component = JavaScript function that returns UI) Tj
+-64 -108 Td
+/F3 10 Tf
+54 94 Td () Tj
+-54 -94 Td
+/F3 10 Tf
+54 78 Td () Tj
+-54 -78 Td
+/F3 9 Tf
+520 28 Td (2) Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 2293 >>
+stream
+BT
+/F3 10 Tf
+54 760 Td (Example:) Tj
+-54 -760 Td
+/F3 10 Tf
+54 744 Td () Tj
+-54 -744 Td
+/F3 10 Tf
+54 728 Td () Tj
+-54 -728 Td
+/F2 9 Tf
+64 712 Td (export default function Login\(\) {) Tj
+-64 -712 Td
+/F2 9 Tf
+64 698 Td (  return <h1>DSA Mentor AI</h1>) Tj
+-64 -698 Td
+/F2 9 Tf
+64 684 Td (}) Tj
+-64 -684 Td
+/F3 10 Tf
+54 670 Td () Tj
+-54 -670 Td
+/F3 10 Tf
+54 654 Td () Tj
+-54 -654 Td
+/F3 10 Tf
+54 638 Td (Here, Login is a component.) Tj
+-54 -638 Td
+/F3 10 Tf
+54 622 Td () Tj
+-54 -622 Td
+/F3 10 Tf
+54 606 Td (Interview answer:) Tj
+-54 -606 Td
+/F3 10 Tf
+54 590 Td () Tj
+-54 -590 Td
+/F3 10 Tf
+66 574 Td (A React component is a reusable function or class that returns JSX and) Tj
+-66 -574 Td
+/F3 10 Tf
+66 558 Td (represents part of the UI.) Tj
+-66 -558 Td
+/F3 10 Tf
+54 542 Td () Tj
+-54 -542 Td
+/F1 15 Tf
+54 526 Td (6. What Is JSX?) Tj
+-54 -526 Td
+/F3 10 Tf
+54 502 Td () Tj
+-54 -502 Td
+/F3 10 Tf
+54 486 Td (JSX lets us write HTML-like code inside JavaScript.) Tj
+-54 -486 Td
+/F3 10 Tf
+54 470 Td () Tj
+-54 -470 Td
+/F3 10 Tf
+54 454 Td (Example:) Tj
+-54 -454 Td
+/F3 10 Tf
+54 438 Td () Tj
+-54 -438 Td
+/F3 10 Tf
+54 422 Td () Tj
+-54 -422 Td
+/F2 9 Tf
+64 406 Td (<h1>DSA Mentor AI</h1>) Tj
+-64 -406 Td
+/F3 10 Tf
+54 392 Td () Tj
+-54 -392 Td
+/F3 10 Tf
+54 376 Td () Tj
+-54 -376 Td
+/F3 10 Tf
+54 360 Td (This looks like HTML, but React uses it inside JavaScript.) Tj
+-54 -360 Td
+/F3 10 Tf
+54 344 Td () Tj
+-54 -344 Td
+/F3 10 Tf
+54 328 Td (Interview answer:) Tj
+-54 -328 Td
+/F3 10 Tf
+54 312 Td () Tj
+-54 -312 Td
+/F3 10 Tf
+66 296 Td (JSX is a syntax extension for JavaScript that allows us to write UI structure) Tj
+-66 -296 Td
+/F3 10 Tf
+66 280 Td (inside React components.) Tj
+-66 -280 Td
+/F3 10 Tf
+54 264 Td () Tj
+-54 -264 Td
+/F1 15 Tf
+54 248 Td (7. What Is useState?) Tj
+-54 -248 Td
+/F3 10 Tf
+54 224 Td () Tj
+-54 -224 Td
+/F3 10 Tf
+54 208 Td (useState is used to store values that can change.) Tj
+-54 -208 Td
+/F3 10 Tf
+54 192 Td () Tj
+-54 -192 Td
+/F3 10 Tf
+54 176 Td (In our login page, these values can change:) Tj
+-54 -176 Td
+/F3 10 Tf
+54 160 Td () Tj
+-54 -160 Td
+/F3 10 Tf
+54 144 Td (- Email) Tj
+-54 -144 Td
+/F3 10 Tf
+54 128 Td (- Password) Tj
+-54 -128 Td
+/F3 10 Tf
+54 112 Td (- Error message) Tj
+-54 -112 Td
+/F3 10 Tf
+54 96 Td () Tj
+-54 -96 Td
+/F3 10 Tf
+54 80 Td (Code:) Tj
+-54 -80 Td
+/F3 9 Tf
+520 28 Td (3) Tj
+ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 10 0 R >>
+endobj
+12 0 obj
+<< /Length 2619 >>
+stream
+BT
+/F3 10 Tf
+54 760 Td () Tj
+-54 -760 Td
+/F3 10 Tf
+54 744 Td () Tj
+-54 -744 Td
+/F2 9 Tf
+64 728 Td (const [email, setEmail] = useState\(''\)) Tj
+-64 -728 Td
+/F2 9 Tf
+64 714 Td (const [password, setPassword] = useState\(''\)) Tj
+-64 -714 Td
+/F2 9 Tf
+64 700 Td (const [error, setError] = useState\(''\)) Tj
+-64 -700 Td
+/F3 10 Tf
+54 686 Td () Tj
+-54 -686 Td
+/F3 10 Tf
+54 670 Td () Tj
+-54 -670 Td
+/F3 10 Tf
+54 654 Td (Meaning:) Tj
+-54 -654 Td
+/F3 10 Tf
+54 638 Td () Tj
+-54 -638 Td
+/F3 10 Tf
+54 622 Td (- email stores the current email.) Tj
+-54 -622 Td
+/F3 10 Tf
+54 606 Td (- setEmail updates the email.) Tj
+-54 -606 Td
+/F3 10 Tf
+54 590 Td (- password stores the current password.) Tj
+-54 -590 Td
+/F3 10 Tf
+54 574 Td (- setPassword updates the password.) Tj
+-54 -574 Td
+/F3 10 Tf
+54 558 Td (- error stores the current error message.) Tj
+-54 -558 Td
+/F3 10 Tf
+54 542 Td (- setError updates the error message.) Tj
+-54 -542 Td
+/F3 10 Tf
+54 526 Td () Tj
+-54 -526 Td
+/F3 10 Tf
+54 510 Td (Interview answer:) Tj
+-54 -510 Td
+/F3 10 Tf
+54 494 Td () Tj
+-54 -494 Td
+/F3 10 Tf
+66 478 Td (useState is a React Hook used to store and update state in a functional) Tj
+-66 -478 Td
+/F3 10 Tf
+66 462 Td (component. When state changes, React re-renders the component.) Tj
+-66 -462 Td
+/F3 10 Tf
+54 446 Td () Tj
+-54 -446 Td
+/F1 15 Tf
+54 430 Td (8. What Is A Controlled Input?) Tj
+-54 -430 Td
+/F3 10 Tf
+54 406 Td () Tj
+-54 -406 Td
+/F3 10 Tf
+54 390 Td (In our form, React controls the input value.) Tj
+-54 -390 Td
+/F3 10 Tf
+54 374 Td () Tj
+-54 -374 Td
+/F3 10 Tf
+54 358 Td (Example:) Tj
+-54 -358 Td
+/F3 10 Tf
+54 342 Td () Tj
+-54 -342 Td
+/F3 10 Tf
+54 326 Td () Tj
+-54 -326 Td
+/F2 9 Tf
+64 310 Td (<input) Tj
+-64 -310 Td
+/F2 9 Tf
+64 296 Td (  value={email}) Tj
+-64 -296 Td
+/F2 9 Tf
+64 282 Td (  onChange={\(event\) => setEmail\(event.target.value\)}) Tj
+-64 -282 Td
+/F2 9 Tf
+64 268 Td (/>) Tj
+-64 -268 Td
+/F3 10 Tf
+54 254 Td () Tj
+-54 -254 Td
+/F3 10 Tf
+54 238 Td () Tj
+-54 -238 Td
+/F3 10 Tf
+54 222 Td (Meaning:) Tj
+-54 -222 Td
+/F3 10 Tf
+54 206 Td () Tj
+-54 -206 Td
+/F3 10 Tf
+54 190 Td (- value={email} means the input value comes from React state.) Tj
+-54 -190 Td
+/F3 10 Tf
+54 174 Td (- onChange runs when the user types.) Tj
+-54 -174 Td
+/F3 10 Tf
+54 158 Td (- setEmail\(event.target.value\) saves the typed value in React state.) Tj
+-54 -158 Td
+/F3 10 Tf
+54 142 Td () Tj
+-54 -142 Td
+/F3 10 Tf
+54 126 Td (Interview answer:) Tj
+-54 -126 Td
+/F3 10 Tf
+54 110 Td () Tj
+-54 -110 Td
+/F3 10 Tf
+66 94 Td (A controlled input is a form input whose value is controlled by React state.) Tj
+-66 -94 Td
+/F3 10 Tf
+54 78 Td () Tj
+-54 -78 Td
+/F3 9 Tf
+520 28 Td (4) Tj
+ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 12 0 R >>
+endobj
+14 0 obj
+<< /Length 2302 >>
+stream
+BT
+/F1 15 Tf
+54 760 Td (9. What Is An Event?) Tj
+-54 -760 Td
+/F3 10 Tf
+54 736 Td () Tj
+-54 -736 Td
+/F3 10 Tf
+54 720 Td (An event is an action done by the user.) Tj
+-54 -720 Td
+/F3 10 Tf
+54 704 Td () Tj
+-54 -704 Td
+/F3 10 Tf
+54 688 Td (Examples:) Tj
+-54 -688 Td
+/F3 10 Tf
+54 672 Td () Tj
+-54 -672 Td
+/F3 10 Tf
+54 656 Td (- Typing in an input) Tj
+-54 -656 Td
+/F3 10 Tf
+54 640 Td (- Clicking a button) Tj
+-54 -640 Td
+/F3 10 Tf
+54 624 Td (- Submitting a form) Tj
+-54 -624 Td
+/F3 10 Tf
+54 608 Td () Tj
+-54 -608 Td
+/F3 10 Tf
+54 592 Td (In our login page:) Tj
+-54 -592 Td
+/F3 10 Tf
+54 576 Td () Tj
+-54 -576 Td
+/F3 10 Tf
+54 560 Td () Tj
+-54 -560 Td
+/F2 9 Tf
+64 544 Td (onChange={\(event\) => setEmail\(event.target.value\)}) Tj
+-64 -544 Td
+/F3 10 Tf
+54 530 Td () Tj
+-54 -530 Td
+/F3 10 Tf
+54 514 Td () Tj
+-54 -514 Td
+/F3 10 Tf
+54 498 Td (This runs when the user types.) Tj
+-54 -498 Td
+/F3 10 Tf
+54 482 Td () Tj
+-54 -482 Td
+/F3 10 Tf
+54 466 Td () Tj
+-54 -466 Td
+/F2 9 Tf
+64 450 Td (onSubmit={handleSubmit}) Tj
+-64 -450 Td
+/F3 10 Tf
+54 436 Td () Tj
+-54 -436 Td
+/F3 10 Tf
+54 420 Td () Tj
+-54 -420 Td
+/F3 10 Tf
+54 404 Td (This runs when the form is submitted.) Tj
+-54 -404 Td
+/F3 10 Tf
+54 388 Td () Tj
+-54 -388 Td
+/F1 15 Tf
+54 372 Td (10. Why Do We Use event.preventDefault\(\)?) Tj
+-54 -372 Td
+/F3 10 Tf
+54 348 Td () Tj
+-54 -348 Td
+/F3 10 Tf
+54 332 Td (Normally, when a form is submitted, the browser refreshes the page.) Tj
+-54 -332 Td
+/F3 10 Tf
+54 316 Td () Tj
+-54 -316 Td
+/F3 10 Tf
+54 300 Td (In React, we do not want the page to refresh.) Tj
+-54 -300 Td
+/F3 10 Tf
+54 284 Td () Tj
+-54 -284 Td
+/F3 10 Tf
+54 268 Td (So we write:) Tj
+-54 -268 Td
+/F3 10 Tf
+54 252 Td () Tj
+-54 -252 Td
+/F3 10 Tf
+54 236 Td () Tj
+-54 -236 Td
+/F2 9 Tf
+64 220 Td (event.preventDefault\(\)) Tj
+-64 -220 Td
+/F3 10 Tf
+54 206 Td () Tj
+-54 -206 Td
+/F3 10 Tf
+54 190 Td () Tj
+-54 -190 Td
+/F3 10 Tf
+54 174 Td (Interview answer:) Tj
+-54 -174 Td
+/F3 10 Tf
+54 158 Td () Tj
+-54 -158 Td
+/F3 10 Tf
+66 142 Td (preventDefault\(\) stops the default browser form submission so React can handle) Tj
+-66 -142 Td
+/F3 10 Tf
+66 126 Td (the form without refreshing the page.) Tj
+-66 -126 Td
+/F3 10 Tf
+54 110 Td () Tj
+-54 -110 Td
+/F1 15 Tf
+54 94 Td (11. How Does Login Submit Work?) Tj
+-54 -94 Td
+/F3 10 Tf
+54 70 Td () Tj
+-54 -70 Td
+/F3 9 Tf
+520 28 Td (5) Tj
+ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 14 0 R >>
+endobj
+16 0 obj
+<< /Length 2558 >>
+stream
+BT
+/F3 10 Tf
+54 760 Td (Our submit function does four things:) Tj
+-54 -760 Td
+/F3 10 Tf
+54 744 Td () Tj
+-54 -744 Td
+/F3 10 Tf
+54 728 Td (1. Stops page refresh.) Tj
+-54 -728 Td
+/F3 10 Tf
+54 712 Td (2. Clears old error messages.) Tj
+-54 -712 Td
+/F3 10 Tf
+54 696 Td (3. Checks if email or password is empty.) Tj
+-54 -696 Td
+/F3 10 Tf
+54 680 Td (4. Shows an alert if the form is valid.) Tj
+-54 -680 Td
+/F3 10 Tf
+54 664 Td () Tj
+-54 -664 Td
+/F3 10 Tf
+54 648 Td (Code:) Tj
+-54 -648 Td
+/F3 10 Tf
+54 632 Td () Tj
+-54 -632 Td
+/F3 10 Tf
+54 616 Td () Tj
+-54 -616 Td
+/F2 9 Tf
+64 600 Td (function handleSubmit\(event\) {) Tj
+-64 -600 Td
+/F2 9 Tf
+64 586 Td (  event.preventDefault\(\)) Tj
+-64 -586 Td
+/F2 9 Tf
+64 572 Td (  setError\(''\)) Tj
+-64 -572 Td
+/F2 9 Tf
+64 558 Td () Tj
+-64 -558 Td
+/F2 9 Tf
+64 544 Td (  if \(!email || !password\) {) Tj
+-64 -544 Td
+/F2 9 Tf
+64 530 Td (    setError\('Please enter both email and password.'\)) Tj
+-64 -530 Td
+/F2 9 Tf
+64 516 Td (    return) Tj
+-64 -516 Td
+/F2 9 Tf
+64 502 Td (  }) Tj
+-64 -502 Td
+/F2 9 Tf
+64 488 Td () Tj
+-64 -488 Td
+/F2 9 Tf
+64 474 Td (  console.log\('Login submitted:', { email, password }\)) Tj
+-64 -474 Td
+/F2 9 Tf
+64 460 Td (  alert\('Login form works. We will connect it to the backend later.'\)) Tj
+-64 -460 Td
+/F2 9 Tf
+64 446 Td (}) Tj
+-64 -446 Td
+/F3 10 Tf
+54 432 Td () Tj
+-54 -432 Td
+/F3 10 Tf
+54 416 Td () Tj
+-54 -416 Td
+/F3 10 Tf
+54 400 Td (Important point:) Tj
+-54 -400 Td
+/F3 10 Tf
+54 384 Td () Tj
+-54 -384 Td
+/F3 10 Tf
+54 368 Td (This is not real login yet.) Tj
+-54 -368 Td
+/F3 10 Tf
+54 352 Td () Tj
+-54 -352 Td
+/F3 10 Tf
+54 336 Td (For real login, we will send the email and password to the backend.) Tj
+-54 -336 Td
+/F3 10 Tf
+54 320 Td () Tj
+-54 -320 Td
+/F1 15 Tf
+54 304 Td (12. What Is Conditional Rendering?) Tj
+-54 -304 Td
+/F3 10 Tf
+54 280 Td () Tj
+-54 -280 Td
+/F3 10 Tf
+54 264 Td (Conditional rendering means showing something only when a condition is true.) Tj
+-54 -264 Td
+/F3 10 Tf
+54 248 Td () Tj
+-54 -248 Td
+/F3 10 Tf
+54 232 Td (Code:) Tj
+-54 -232 Td
+/F3 10 Tf
+54 216 Td () Tj
+-54 -216 Td
+/F3 10 Tf
+54 200 Td () Tj
+-54 -200 Td
+/F2 9 Tf
+64 184 Td ({error && <p className="error-message">{error}</p>}) Tj
+-64 -184 Td
+/F3 10 Tf
+54 170 Td () Tj
+-54 -170 Td
+/F3 10 Tf
+54 154 Td () Tj
+-54 -154 Td
+/F3 10 Tf
+54 138 Td (Meaning:) Tj
+-54 -138 Td
+/F3 10 Tf
+54 122 Td () Tj
+-54 -122 Td
+/F3 10 Tf
+54 106 Td (- If error has text, show the error message.) Tj
+-54 -106 Td
+/F3 10 Tf
+54 90 Td (- If error is empty, show nothing.) Tj
+-54 -90 Td
+/F3 10 Tf
+54 74 Td () Tj
+-54 -74 Td
+/F3 9 Tf
+520 28 Td (6) Tj
+ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 16 0 R >>
+endobj
+18 0 obj
+<< /Length 2510 >>
+stream
+BT
+/F3 10 Tf
+54 760 Td (Interview answer:) Tj
+-54 -760 Td
+/F3 10 Tf
+54 744 Td () Tj
+-54 -744 Td
+/F3 10 Tf
+66 728 Td (Conditional rendering means displaying UI based on a condition.) Tj
+-66 -728 Td
+/F3 10 Tf
+54 712 Td () Tj
+-54 -712 Td
+/F1 15 Tf
+54 696 Td (13. Why Use htmlFor Instead Of for?) Tj
+-54 -696 Td
+/F3 10 Tf
+54 672 Td () Tj
+-54 -672 Td
+/F3 10 Tf
+54 656 Td (In normal HTML, we write:) Tj
+-54 -656 Td
+/F3 10 Tf
+54 640 Td () Tj
+-54 -640 Td
+/F3 10 Tf
+54 624 Td () Tj
+-54 -624 Td
+/F2 9 Tf
+64 608 Td (<label for="email">) Tj
+-64 -608 Td
+/F3 10 Tf
+54 594 Td () Tj
+-54 -594 Td
+/F3 10 Tf
+54 578 Td () Tj
+-54 -578 Td
+/F3 10 Tf
+54 562 Td (In React JSX, we write:) Tj
+-54 -562 Td
+/F3 10 Tf
+54 546 Td () Tj
+-54 -546 Td
+/F3 10 Tf
+54 530 Td () Tj
+-54 -530 Td
+/F2 9 Tf
+64 514 Td (<label htmlFor="email">) Tj
+-64 -514 Td
+/F3 10 Tf
+54 500 Td () Tj
+-54 -500 Td
+/F3 10 Tf
+54 484 Td () Tj
+-54 -484 Td
+/F3 10 Tf
+54 468 Td (Reason:) Tj
+-54 -468 Td
+/F3 10 Tf
+54 452 Td () Tj
+-54 -452 Td
+/F3 10 Tf
+54 436 Td (for is a reserved word in JavaScript, so React uses htmlFor.) Tj
+-54 -436 Td
+/F3 10 Tf
+54 420 Td () Tj
+-54 -420 Td
+/F1 15 Tf
+54 404 Td (14. What Should I Say In An Interview?) Tj
+-54 -404 Td
+/F3 10 Tf
+54 380 Td () Tj
+-54 -380 Td
+/F3 10 Tf
+54 364 Td (You can explain this project like this:) Tj
+-54 -364 Td
+/F3 10 Tf
+54 348 Td () Tj
+-54 -348 Td
+/F3 10 Tf
+66 332 Td (I built a React login form using functional components and hooks. I used) Tj
+-66 -332 Td
+/F3 10 Tf
+66 316 Td (useState to store the email, password, and error message. The form uses) Tj
+-66 -316 Td
+/F3 10 Tf
+66 300 Td (controlled inputs, so the input values are managed by React state. I used) Tj
+-66 -300 Td
+/F3 10 Tf
+66 284 Td (onChange to update state when the user types, and onSubmit to handle form) Tj
+-66 -284 Td
+/F3 10 Tf
+66 268 Td (submission. I also used preventDefault\(\) to stop page refresh and conditional) Tj
+-66 -268 Td
+/F3 10 Tf
+66 252 Td (rendering to show validation errors.) Tj
+-66 -252 Td
+/F3 10 Tf
+54 236 Td () Tj
+-54 -236 Td
+/F1 15 Tf
+54 220 Td (15. What Is Done And What Is Not Done?) Tj
+-54 -220 Td
+/F3 10 Tf
+54 196 Td () Tj
+-54 -196 Td
+/F3 10 Tf
+54 180 Td (Done:) Tj
+-54 -180 Td
+/F3 10 Tf
+54 164 Td () Tj
+-54 -164 Td
+/F3 10 Tf
+54 148 Td (- Login UI) Tj
+-54 -148 Td
+/F3 10 Tf
+54 132 Td (- Email input) Tj
+-54 -132 Td
+/F3 10 Tf
+54 116 Td (- Password input) Tj
+-54 -116 Td
+/F3 10 Tf
+54 100 Td (- Basic empty field validation) Tj
+-54 -100 Td
+/F3 10 Tf
+54 84 Td (- React state handling) Tj
+-54 -84 Td
+/F3 9 Tf
+520 28 Td (7) Tj
+ET
+endstream
+endobj
+19 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 18 0 R >>
+endobj
+20 0 obj
+<< /Length 2131 >>
+stream
+BT
+/F3 10 Tf
+54 760 Td (- Form submit handling) Tj
+-54 -760 Td
+/F3 10 Tf
+54 744 Td () Tj
+-54 -744 Td
+/F3 10 Tf
+54 728 Td (Not done yet:) Tj
+-54 -728 Td
+/F3 10 Tf
+54 712 Td () Tj
+-54 -712 Td
+/F3 10 Tf
+54 696 Td (- Signup page) Tj
+-54 -696 Td
+/F3 10 Tf
+54 680 Td (- Backend) Tj
+-54 -680 Td
+/F3 10 Tf
+54 664 Td (- MongoDB) Tj
+-54 -664 Td
+/F3 10 Tf
+54 648 Td (- Real authentication) Tj
+-54 -648 Td
+/F3 10 Tf
+54 632 Td (- JWT token) Tj
+-54 -632 Td
+/F3 10 Tf
+54 616 Td (- Protected dashboard) Tj
+-54 -616 Td
+/F3 10 Tf
+54 600 Td () Tj
+-54 -600 Td
+/F1 15 Tf
+54 584 Td (16. Next Step) Tj
+-54 -584 Td
+/F3 10 Tf
+54 560 Td () Tj
+-54 -560 Td
+/F3 10 Tf
+54 544 Td (Next, we should build the Signup page.) Tj
+-54 -544 Td
+/F3 10 Tf
+54 528 Td () Tj
+-54 -528 Td
+/F3 10 Tf
+54 512 Td (Signup will use the same concepts:) Tj
+-54 -512 Td
+/F3 10 Tf
+54 496 Td () Tj
+-54 -496 Td
+/F3 10 Tf
+54 480 Td (- Components) Tj
+-54 -480 Td
+/F3 10 Tf
+54 464 Td (- JSX) Tj
+-54 -464 Td
+/F3 10 Tf
+54 448 Td (- useState) Tj
+-54 -448 Td
+/F3 10 Tf
+54 432 Td (- Controlled inputs) Tj
+-54 -432 Td
+/F3 10 Tf
+54 416 Td (- Events) Tj
+-54 -416 Td
+/F3 10 Tf
+54 400 Td (- Form validation) Tj
+-54 -400 Td
+/F3 10 Tf
+54 384 Td (- Conditional rendering) Tj
+-54 -384 Td
+/F3 10 Tf
+54 368 Td () Tj
+-54 -368 Td
+/F1 22 Tf
+54 352 Td (Signup Page Notes) Tj
+-54 -352 Td
+/F3 10 Tf
+54 324 Td () Tj
+-54 -324 Td
+/F1 15 Tf
+54 308 Td (1. What Did We Build?) Tj
+-54 -308 Td
+/F3 10 Tf
+54 284 Td () Tj
+-54 -284 Td
+/F3 10 Tf
+54 268 Td (We added a Signup page.) Tj
+-54 -268 Td
+/F3 10 Tf
+54 252 Td () Tj
+-54 -252 Td
+/F3 10 Tf
+54 236 Td (The Signup page has:) Tj
+-54 -236 Td
+/F3 10 Tf
+54 220 Td () Tj
+-54 -220 Td
+/F3 10 Tf
+54 204 Td (- Name input) Tj
+-54 -204 Td
+/F3 10 Tf
+54 188 Td (- Email input) Tj
+-54 -188 Td
+/F3 10 Tf
+54 172 Td (- Password input) Tj
+-54 -172 Td
+/F3 10 Tf
+54 156 Td (- Confirm password input) Tj
+-54 -156 Td
+/F3 10 Tf
+54 140 Td (- Signup button) Tj
+-54 -140 Td
+/F3 10 Tf
+54 124 Td (- Validation messages) Tj
+-54 -124 Td
+/F3 10 Tf
+54 108 Td () Tj
+-54 -108 Td
+/F3 10 Tf
+54 92 Td (This is still frontend only.) Tj
+-54 -92 Td
+/F3 10 Tf
+54 76 Td () Tj
+-54 -76 Td
+/F3 9 Tf
+520 28 Td (8) Tj
+ET
+endstream
+endobj
+21 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 20 0 R >>
+endobj
+22 0 obj
+<< /Length 2499 >>
+stream
+BT
+/F3 10 Tf
+54 760 Td (The form does not create a real account yet.) Tj
+-54 -760 Td
+/F3 10 Tf
+54 744 Td () Tj
+-54 -744 Td
+/F3 10 Tf
+54 728 Td (Real account creation will happen later when we connect the backend and) Tj
+-54 -728 Td
+/F3 10 Tf
+54 712 Td (MongoDB.) Tj
+-54 -712 Td
+/F3 10 Tf
+54 696 Td () Tj
+-54 -696 Td
+/F1 15 Tf
+54 680 Td (2. Why Did We Add Signup?) Tj
+-54 -680 Td
+/F3 10 Tf
+54 656 Td () Tj
+-54 -656 Td
+/F3 10 Tf
+54 640 Td (In most full-stack apps, users need two authentication screens:) Tj
+-54 -640 Td
+/F3 10 Tf
+54 624 Td () Tj
+-54 -624 Td
+/F3 10 Tf
+54 608 Td (- Login: for existing users) Tj
+-54 -608 Td
+/F3 10 Tf
+54 592 Td (- Signup: for new users) Tj
+-54 -592 Td
+/F3 10 Tf
+54 576 Td () Tj
+-54 -576 Td
+/F3 10 Tf
+54 560 Td (This is why we created a separate Signup.jsx component.) Tj
+-54 -560 Td
+/F3 10 Tf
+54 544 Td () Tj
+-54 -544 Td
+/F1 15 Tf
+54 528 Td (3. What New File Did We Add?) Tj
+-54 -528 Td
+/F3 10 Tf
+54 504 Td () Tj
+-54 -504 Td
+/F3 10 Tf
+54 488 Td (We added:) Tj
+-54 -488 Td
+/F3 10 Tf
+54 472 Td () Tj
+-54 -472 Td
+/F3 10 Tf
+54 456 Td () Tj
+-54 -456 Td
+/F2 9 Tf
+64 440 Td (frontend/src/pages/Signup.jsx) Tj
+-64 -440 Td
+/F3 10 Tf
+54 426 Td () Tj
+-54 -426 Td
+/F3 10 Tf
+54 410 Td () Tj
+-54 -410 Td
+/F3 10 Tf
+54 394 Td (This file contains the Signup page UI and form logic.) Tj
+-54 -394 Td
+/F3 10 Tf
+54 378 Td () Tj
+-54 -378 Td
+/F1 15 Tf
+54 362 Td (4. Why Is Signup A Separate Component?) Tj
+-54 -362 Td
+/F3 10 Tf
+54 338 Td () Tj
+-54 -338 Td
+/F3 10 Tf
+54 322 Td (We keep Login and Signup separate because each page has different fields and) Tj
+-54 -322 Td
+/F3 10 Tf
+54 306 Td (different validation.) Tj
+-54 -306 Td
+/F3 10 Tf
+54 290 Td () Tj
+-54 -290 Td
+/F3 10 Tf
+54 274 Td (This makes the code easier to read and maintain.) Tj
+-54 -274 Td
+/F3 10 Tf
+54 258 Td () Tj
+-54 -258 Td
+/F3 10 Tf
+54 242 Td (Interview answer:) Tj
+-54 -242 Td
+/F3 10 Tf
+54 226 Td () Tj
+-54 -226 Td
+/F3 10 Tf
+66 210 Td (I separated Login and Signup into different components because each screen has) Tj
+-66 -210 Td
+/F3 10 Tf
+66 194 Td (its own UI and logic. This improves readability and maintainability.) Tj
+-66 -194 Td
+/F3 10 Tf
+54 178 Td () Tj
+-54 -178 Td
+/F1 15 Tf
+54 162 Td (5. What Is Happening In App.jsx?) Tj
+-54 -162 Td
+/F3 10 Tf
+54 138 Td () Tj
+-54 -138 Td
+/F3 10 Tf
+54 122 Td (We used state in App.jsx to decide which page to show.) Tj
+-54 -122 Td
+/F3 10 Tf
+54 106 Td () Tj
+-54 -106 Td
+/F3 10 Tf
+54 90 Td (Code idea:) Tj
+-54 -90 Td
+/F3 10 Tf
+54 74 Td () Tj
+-54 -74 Td
+/F3 9 Tf
+520 28 Td (9) Tj
+ET
+endstream
+endobj
+23 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 22 0 R >>
+endobj
+24 0 obj
+<< /Length 2400 >>
+stream
+BT
+/F3 10 Tf
+54 760 Td () Tj
+-54 -760 Td
+/F2 9 Tf
+64 744 Td (const [authPage, setAuthPage] = useState\('login'\)) Tj
+-64 -744 Td
+/F3 10 Tf
+54 730 Td () Tj
+-54 -730 Td
+/F3 10 Tf
+54 714 Td () Tj
+-54 -714 Td
+/F3 10 Tf
+54 698 Td (Meaning:) Tj
+-54 -698 Td
+/F3 10 Tf
+54 682 Td () Tj
+-54 -682 Td
+/F3 10 Tf
+54 666 Td (- If authPage is login, show the Login page.) Tj
+-54 -666 Td
+/F3 10 Tf
+54 650 Td (- If authPage is signup, show the Signup page.) Tj
+-54 -650 Td
+/F3 10 Tf
+54 634 Td () Tj
+-54 -634 Td
+/F3 10 Tf
+54 618 Td (This is a simple beginner-friendly way to switch screens before learning React) Tj
+-54 -618 Td
+/F3 10 Tf
+54 602 Td (Router.) Tj
+-54 -602 Td
+/F3 10 Tf
+54 586 Td () Tj
+-54 -586 Td
+/F1 15 Tf
+54 570 Td (6. What Are Props?) Tj
+-54 -570 Td
+/F3 10 Tf
+54 546 Td () Tj
+-54 -546 Td
+/F3 10 Tf
+54 530 Td (Props are values passed from one component to another.) Tj
+-54 -530 Td
+/F3 10 Tf
+54 514 Td () Tj
+-54 -514 Td
+/F3 10 Tf
+54 498 Td (Example:) Tj
+-54 -498 Td
+/F3 10 Tf
+54 482 Td () Tj
+-54 -482 Td
+/F3 10 Tf
+54 466 Td () Tj
+-54 -466 Td
+/F2 9 Tf
+64 450 Td (<Login onShowSignup={\(\) => setAuthPage\('signup'\)} />) Tj
+-64 -450 Td
+/F3 10 Tf
+54 436 Td () Tj
+-54 -436 Td
+/F3 10 Tf
+54 420 Td () Tj
+-54 -420 Td
+/F3 10 Tf
+54 404 Td (Here, onShowSignup is a prop.) Tj
+-54 -404 Td
+/F3 10 Tf
+54 388 Td () Tj
+-54 -388 Td
+/F3 10 Tf
+54 372 Td (It allows the Login component to tell App.jsx to show the Signup page.) Tj
+-54 -372 Td
+/F3 10 Tf
+54 356 Td () Tj
+-54 -356 Td
+/F3 10 Tf
+54 340 Td (Interview answer:) Tj
+-54 -340 Td
+/F3 10 Tf
+54 324 Td () Tj
+-54 -324 Td
+/F3 10 Tf
+66 308 Td (Props are used to pass data or functions from a parent component to a child) Tj
+-66 -308 Td
+/F3 10 Tf
+66 292 Td (component.) Tj
+-66 -292 Td
+/F3 10 Tf
+54 276 Td () Tj
+-54 -276 Td
+/F1 15 Tf
+54 260 Td (7. Parent And Child Components) Tj
+-54 -260 Td
+/F3 10 Tf
+54 236 Td () Tj
+-54 -236 Td
+/F3 10 Tf
+54 220 Td (In our app:) Tj
+-54 -220 Td
+/F3 10 Tf
+54 204 Td () Tj
+-54 -204 Td
+/F3 10 Tf
+54 188 Td () Tj
+-54 -188 Td
+/F2 9 Tf
+64 172 Td (App.jsx = parent component) Tj
+-64 -172 Td
+/F2 9 Tf
+64 158 Td (Login.jsx = child component) Tj
+-64 -158 Td
+/F2 9 Tf
+64 144 Td (Signup.jsx = child component) Tj
+-64 -144 Td
+/F3 10 Tf
+54 130 Td () Tj
+-54 -130 Td
+/F3 10 Tf
+54 114 Td () Tj
+-54 -114 Td
+/F3 10 Tf
+54 98 Td (App.jsx controls which child component is visible.) Tj
+-54 -98 Td
+/F3 10 Tf
+54 82 Td () Tj
+-54 -82 Td
+/F3 9 Tf
+520 28 Td (10) Tj
+ET
+endstream
+endobj
+25 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 24 0 R >>
+endobj
+26 0 obj
+<< /Length 2631 >>
+stream
+BT
+/F3 10 Tf
+54 760 Td (This is a common React pattern.) Tj
+-54 -760 Td
+/F3 10 Tf
+54 744 Td () Tj
+-54 -744 Td
+/F1 15 Tf
+54 728 Td (8. Signup Form State) Tj
+-54 -728 Td
+/F3 10 Tf
+54 704 Td () Tj
+-54 -704 Td
+/F3 10 Tf
+54 688 Td (In Signup, we used state for each input:) Tj
+-54 -688 Td
+/F3 10 Tf
+54 672 Td () Tj
+-54 -672 Td
+/F3 10 Tf
+54 656 Td () Tj
+-54 -656 Td
+/F2 9 Tf
+64 640 Td (const [name, setName] = useState\(''\)) Tj
+-64 -640 Td
+/F2 9 Tf
+64 626 Td (const [email, setEmail] = useState\(''\)) Tj
+-64 -626 Td
+/F2 9 Tf
+64 612 Td (const [password, setPassword] = useState\(''\)) Tj
+-64 -612 Td
+/F2 9 Tf
+64 598 Td (const [confirmPassword, setConfirmPassword] = useState\(''\)) Tj
+-64 -598 Td
+/F2 9 Tf
+64 584 Td (const [error, setError] = useState\(''\)) Tj
+-64 -584 Td
+/F3 10 Tf
+54 570 Td () Tj
+-54 -570 Td
+/F3 10 Tf
+54 554 Td () Tj
+-54 -554 Td
+/F3 10 Tf
+54 538 Td (Each input needs its own state because each value can change independently.) Tj
+-54 -538 Td
+/F3 10 Tf
+54 522 Td () Tj
+-54 -522 Td
+/F1 15 Tf
+54 506 Td (9. Signup Validation) Tj
+-54 -506 Td
+/F3 10 Tf
+54 482 Td () Tj
+-54 -482 Td
+/F3 10 Tf
+54 466 Td (We added three validation checks:) Tj
+-54 -466 Td
+/F3 10 Tf
+54 450 Td () Tj
+-54 -450 Td
+/F3 10 Tf
+54 434 Td (1. All fields must be filled.) Tj
+-54 -434 Td
+/F3 10 Tf
+54 418 Td (2. Password must be at least 6 characters.) Tj
+-54 -418 Td
+/F3 10 Tf
+54 402 Td (3. Password and confirm password must match.) Tj
+-54 -402 Td
+/F3 10 Tf
+54 386 Td () Tj
+-54 -386 Td
+/F3 10 Tf
+54 370 Td (This validation happens before sending data to the backend.) Tj
+-54 -370 Td
+/F3 10 Tf
+54 354 Td () Tj
+-54 -354 Td
+/F3 10 Tf
+54 338 Td (Important:) Tj
+-54 -338 Td
+/F3 10 Tf
+54 322 Td () Tj
+-54 -322 Td
+/F3 10 Tf
+54 306 Td (Frontend validation improves user experience, but backend validation is also) Tj
+-54 -306 Td
+/F3 10 Tf
+54 290 Td (required for security.) Tj
+-54 -290 Td
+/F3 10 Tf
+54 274 Td () Tj
+-54 -274 Td
+/F3 10 Tf
+54 258 Td (Interview answer:) Tj
+-54 -258 Td
+/F3 10 Tf
+54 242 Td () Tj
+-54 -242 Td
+/F3 10 Tf
+66 226 Td (I added frontend validation to give quick feedback to the user, but I know) Tj
+-66 -226 Td
+/F3 10 Tf
+66 210 Td (backend validation is also necessary because frontend code can be bypassed.) Tj
+-66 -210 Td
+/F3 10 Tf
+54 194 Td () Tj
+-54 -194 Td
+/F1 15 Tf
+54 178 Td (10. What Is Done Now?) Tj
+-54 -178 Td
+/F3 10 Tf
+54 154 Td () Tj
+-54 -154 Td
+/F3 10 Tf
+54 138 Td (Done:) Tj
+-54 -138 Td
+/F3 10 Tf
+54 122 Td () Tj
+-54 -122 Td
+/F3 10 Tf
+54 106 Td (- Login UI) Tj
+-54 -106 Td
+/F3 10 Tf
+54 90 Td (- Signup UI) Tj
+-54 -90 Td
+/F3 10 Tf
+54 74 Td (- Switching between Login and Signup) Tj
+-54 -74 Td
+/F3 9 Tf
+520 28 Td (11) Tj
+ET
+endstream
+endobj
+27 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 26 0 R >>
+endobj
+28 0 obj
+<< /Length 2573 >>
+stream
+BT
+/F3 10 Tf
+54 760 Td (- Basic form validation) Tj
+-54 -760 Td
+/F3 10 Tf
+54 744 Td (- Reusable auth styling) Tj
+-54 -744 Td
+/F3 10 Tf
+54 728 Td () Tj
+-54 -728 Td
+/F3 10 Tf
+54 712 Td (Not done yet:) Tj
+-54 -712 Td
+/F3 10 Tf
+54 696 Td () Tj
+-54 -696 Td
+/F3 10 Tf
+54 680 Td (- Real signup API) Tj
+-54 -680 Td
+/F3 10 Tf
+54 664 Td (- Real login API) Tj
+-54 -664 Td
+/F3 10 Tf
+54 648 Td (- Password hashing) Tj
+-54 -648 Td
+/F3 10 Tf
+54 632 Td (- JWT authentication) Tj
+-54 -632 Td
+/F3 10 Tf
+54 616 Td (- MongoDB user storage) Tj
+-54 -616 Td
+/F3 10 Tf
+54 600 Td () Tj
+-54 -600 Td
+/F1 15 Tf
+54 584 Td (11. Interview Summary For Signup) Tj
+-54 -584 Td
+/F3 10 Tf
+54 560 Td () Tj
+-54 -560 Td
+/F3 10 Tf
+54 544 Td (You can say:) Tj
+-54 -544 Td
+/F3 10 Tf
+54 528 Td () Tj
+-54 -528 Td
+/F3 10 Tf
+66 512 Td (I created a Signup component with controlled inputs for name, email, password,) Tj
+-66 -512 Td
+/F3 10 Tf
+66 496 Td (and confirm password. I used useState to manage form values and validation) Tj
+-66 -496 Td
+/F3 10 Tf
+66 480 Td (errors. I also passed functions as props from the parent App component to) Tj
+-66 -480 Td
+/F3 10 Tf
+66 464 Td (switch between Login and Signup screens. This helped me understand component) Tj
+-66 -464 Td
+/F3 10 Tf
+66 448 Td (communication, props, and form validation in React.) Tj
+-66 -448 Td
+/F3 10 Tf
+54 432 Td () Tj
+-54 -432 Td
+/F1 22 Tf
+54 416 Td (Dashboard UI Notes) Tj
+-54 -416 Td
+/F3 10 Tf
+54 388 Td () Tj
+-54 -388 Td
+/F1 15 Tf
+54 372 Td (1. What Did We Build After Login?) Tj
+-54 -372 Td
+/F3 10 Tf
+54 348 Td () Tj
+-54 -348 Td
+/F3 10 Tf
+54 332 Td (After Login and Signup, we built the Dashboard page.) Tj
+-54 -332 Td
+/F3 10 Tf
+54 316 Td () Tj
+-54 -316 Td
+/F3 10 Tf
+54 300 Td (The Dashboard is the page a user sees after logging in.) Tj
+-54 -300 Td
+/F3 10 Tf
+54 284 Td () Tj
+-54 -284 Td
+/F3 10 Tf
+54 268 Td (It shows:) Tj
+-54 -268 Td
+/F3 10 Tf
+54 252 Td () Tj
+-54 -252 Td
+/F3 10 Tf
+54 236 Td (- Total solved problems) Tj
+-54 -236 Td
+/F3 10 Tf
+54 220 Td (- Completion percentage) Tj
+-54 -220 Td
+/F3 10 Tf
+54 204 Td (- Current focus topic) Tj
+-54 -204 Td
+/F3 10 Tf
+54 188 Td (- Topic-wise progress) Tj
+-54 -188 Td
+/F3 10 Tf
+54 172 Td (- Recommended problems) Tj
+-54 -172 Td
+/F3 10 Tf
+54 156 Td (- Recent activity) Tj
+-54 -156 Td
+/F3 10 Tf
+54 140 Td () Tj
+-54 -140 Td
+/F3 10 Tf
+54 124 Td (For now, this data is sample frontend data.) Tj
+-54 -124 Td
+/F3 10 Tf
+54 108 Td () Tj
+-54 -108 Td
+/F3 10 Tf
+54 92 Td (Later, this data will come from MongoDB through the backend API.) Tj
+-54 -92 Td
+/F3 10 Tf
+54 76 Td () Tj
+-54 -76 Td
+/F3 9 Tf
+520 28 Td (12) Tj
+ET
+endstream
+endobj
+29 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 28 0 R >>
+endobj
+30 0 obj
+<< /Length 2202 >>
+stream
+BT
+/F1 15 Tf
+54 760 Td (2. Why Dashboard Comes After Login) Tj
+-54 -760 Td
+/F3 10 Tf
+54 736 Td () Tj
+-54 -736 Td
+/F3 10 Tf
+54 720 Td (In a full-stack app, authentication decides whether a user can access private) Tj
+-54 -720 Td
+/F3 10 Tf
+54 704 Td (pages.) Tj
+-54 -704 Td
+/F3 10 Tf
+54 688 Td () Tj
+-54 -688 Td
+/F3 10 Tf
+54 672 Td (Public pages:) Tj
+-54 -672 Td
+/F3 10 Tf
+54 656 Td () Tj
+-54 -656 Td
+/F3 10 Tf
+54 640 Td (- Login) Tj
+-54 -640 Td
+/F3 10 Tf
+54 624 Td (- Signup) Tj
+-54 -624 Td
+/F3 10 Tf
+54 608 Td () Tj
+-54 -608 Td
+/F3 10 Tf
+54 592 Td (Private pages:) Tj
+-54 -592 Td
+/F3 10 Tf
+54 576 Td () Tj
+-54 -576 Td
+/F3 10 Tf
+54 560 Td (- Dashboard) Tj
+-54 -560 Td
+/F3 10 Tf
+54 544 Td (- Problem tracker) Tj
+-54 -544 Td
+/F3 10 Tf
+54 528 Td (- Analytics) Tj
+-54 -528 Td
+/F3 10 Tf
+54 512 Td (- AI assistant) Tj
+-54 -512 Td
+/F3 10 Tf
+54 496 Td () Tj
+-54 -496 Td
+/F3 10 Tf
+54 480 Td (For now, we simulate login by changing state in React.) Tj
+-54 -480 Td
+/F3 10 Tf
+54 464 Td () Tj
+-54 -464 Td
+/F3 10 Tf
+54 448 Td (Later, real login will use JWT tokens from the backend.) Tj
+-54 -448 Td
+/F3 10 Tf
+54 432 Td () Tj
+-54 -432 Td
+/F1 15 Tf
+54 416 Td (3. What New File Did We Add?) Tj
+-54 -416 Td
+/F3 10 Tf
+54 392 Td () Tj
+-54 -392 Td
+/F3 10 Tf
+54 376 Td (We added:) Tj
+-54 -376 Td
+/F3 10 Tf
+54 360 Td () Tj
+-54 -360 Td
+/F3 10 Tf
+54 344 Td () Tj
+-54 -344 Td
+/F2 9 Tf
+64 328 Td (frontend/src/pages/Dashboard.jsx) Tj
+-64 -328 Td
+/F3 10 Tf
+54 314 Td () Tj
+-54 -314 Td
+/F3 10 Tf
+54 298 Td () Tj
+-54 -298 Td
+/F3 10 Tf
+54 282 Td (This file contains the dashboard UI.) Tj
+-54 -282 Td
+/F3 10 Tf
+54 266 Td () Tj
+-54 -266 Td
+/F1 15 Tf
+54 250 Td (4. What New Concept Did We Learn?) Tj
+-54 -250 Td
+/F3 10 Tf
+54 226 Td () Tj
+-54 -226 Td
+/F3 10 Tf
+54 210 Td (We learned conditional page rendering.) Tj
+-54 -210 Td
+/F3 10 Tf
+54 194 Td () Tj
+-54 -194 Td
+/F3 10 Tf
+54 178 Td (In App.jsx, we used:) Tj
+-54 -178 Td
+/F3 10 Tf
+54 162 Td () Tj
+-54 -162 Td
+/F3 10 Tf
+54 146 Td () Tj
+-54 -146 Td
+/F2 9 Tf
+64 130 Td (const [isLoggedIn, setIsLoggedIn] = useState\(false\)) Tj
+-64 -130 Td
+/F3 10 Tf
+54 116 Td () Tj
+-54 -116 Td
+/F3 10 Tf
+54 100 Td () Tj
+-54 -100 Td
+/F3 10 Tf
+54 84 Td (Meaning:) Tj
+-54 -84 Td
+/F3 9 Tf
+520 28 Td (13) Tj
+ET
+endstream
+endobj
+31 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 30 0 R >>
+endobj
+32 0 obj
+<< /Length 2588 >>
+stream
+BT
+/F3 10 Tf
+54 760 Td () Tj
+-54 -760 Td
+/F3 10 Tf
+54 744 Td (- If isLoggedIn is false, show Login or Signup.) Tj
+-54 -744 Td
+/F3 10 Tf
+54 728 Td (- If isLoggedIn is true, show Dashboard.) Tj
+-54 -728 Td
+/F3 10 Tf
+54 712 Td () Tj
+-54 -712 Td
+/F3 10 Tf
+54 696 Td (Interview answer:) Tj
+-54 -696 Td
+/F3 10 Tf
+54 680 Td () Tj
+-54 -680 Td
+/F3 10 Tf
+66 664 Td (I used React state to conditionally render the Dashboard after successful) Tj
+-66 -664 Td
+/F3 10 Tf
+66 648 Td (login or signup. This simulates protected page behavior before adding real) Tj
+-66 -648 Td
+/F3 10 Tf
+66 632 Td (authentication.) Tj
+-66 -632 Td
+/F3 10 Tf
+54 616 Td () Tj
+-54 -616 Td
+/F1 15 Tf
+54 600 Td (5. Why Are We Using Sample Data?) Tj
+-54 -600 Td
+/F3 10 Tf
+54 576 Td () Tj
+-54 -576 Td
+/F3 10 Tf
+54 560 Td (We are using sample data because the backend and database are not ready yet.) Tj
+-54 -560 Td
+/F3 10 Tf
+54 544 Td () Tj
+-54 -544 Td
+/F3 10 Tf
+54 528 Td (This is a common development approach.) Tj
+-54 -528 Td
+/F3 10 Tf
+54 512 Td () Tj
+-54 -512 Td
+/F3 10 Tf
+54 496 Td (First we build the frontend layout with sample data.) Tj
+-54 -496 Td
+/F3 10 Tf
+54 480 Td () Tj
+-54 -480 Td
+/F3 10 Tf
+54 464 Td (Then we replace sample data with real API data later.) Tj
+-54 -464 Td
+/F3 10 Tf
+54 448 Td () Tj
+-54 -448 Td
+/F3 10 Tf
+54 432 Td (Interview answer:) Tj
+-54 -432 Td
+/F3 10 Tf
+54 416 Td () Tj
+-54 -416 Td
+/F3 10 Tf
+66 400 Td (I first built the Dashboard with static sample data to complete the UI) Tj
+-66 -400 Td
+/F3 10 Tf
+66 384 Td (structure. Later, I will replace that data with API responses from the) Tj
+-66 -384 Td
+/F3 10 Tf
+66 368 Td (backend.) Tj
+-66 -368 Td
+/F3 10 Tf
+54 352 Td () Tj
+-54 -352 Td
+/F1 15 Tf
+54 336 Td (6. What Is .map\(\) Doing?) Tj
+-54 -336 Td
+/F3 10 Tf
+54 312 Td () Tj
+-54 -312 Td
+/F3 10 Tf
+54 296 Td (In Dashboard, we use .map\(\) to display repeated UI.) Tj
+-54 -296 Td
+/F3 10 Tf
+54 280 Td () Tj
+-54 -280 Td
+/F3 10 Tf
+54 264 Td (Example:) Tj
+-54 -264 Td
+/F3 10 Tf
+54 248 Td () Tj
+-54 -248 Td
+/F3 10 Tf
+54 232 Td () Tj
+-54 -232 Td
+/F2 9 Tf
+64 216 Td (topicProgress.map\(\(topic\) => {) Tj
+-64 -216 Td
+/F2 9 Tf
+64 202 Td (  return <article key={topic.name}>...</article>) Tj
+-64 -202 Td
+/F2 9 Tf
+64 188 Td (}\)) Tj
+-64 -188 Td
+/F3 10 Tf
+54 174 Td () Tj
+-54 -174 Td
+/F3 10 Tf
+54 158 Td () Tj
+-54 -158 Td
+/F3 10 Tf
+54 142 Td (Meaning:) Tj
+-54 -142 Td
+/F3 10 Tf
+54 126 Td () Tj
+-54 -126 Td
+/F3 10 Tf
+54 110 Td (- Take each topic from the array.) Tj
+-54 -110 Td
+/F3 10 Tf
+54 94 Td (- Create one UI row for that topic.) Tj
+-54 -94 Td
+/F3 10 Tf
+54 78 Td () Tj
+-54 -78 Td
+/F3 9 Tf
+520 28 Td (14) Tj
+ET
+endstream
+endobj
+33 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 32 0 R >>
+endobj
+34 0 obj
+<< /Length 2305 >>
+stream
+BT
+/F3 10 Tf
+54 760 Td (Interview answer:) Tj
+-54 -760 Td
+/F3 10 Tf
+54 744 Td () Tj
+-54 -744 Td
+/F3 10 Tf
+66 728 Td (.map\(\) is used in React to render lists by converting each item in an array) Tj
+-66 -728 Td
+/F3 10 Tf
+66 712 Td (into JSX.) Tj
+-66 -712 Td
+/F3 10 Tf
+54 696 Td () Tj
+-54 -696 Td
+/F1 15 Tf
+54 680 Td (7. Why Do We Use key In Lists?) Tj
+-54 -680 Td
+/F3 10 Tf
+54 656 Td () Tj
+-54 -656 Td
+/F3 10 Tf
+54 640 Td (React needs a key when rendering lists.) Tj
+-54 -640 Td
+/F3 10 Tf
+54 624 Td () Tj
+-54 -624 Td
+/F3 10 Tf
+54 608 Td (Example:) Tj
+-54 -608 Td
+/F3 10 Tf
+54 592 Td () Tj
+-54 -592 Td
+/F3 10 Tf
+54 576 Td () Tj
+-54 -576 Td
+/F2 9 Tf
+64 560 Td (<article key={topic.name}>) Tj
+-64 -560 Td
+/F3 10 Tf
+54 546 Td () Tj
+-54 -546 Td
+/F3 10 Tf
+54 530 Td () Tj
+-54 -530 Td
+/F3 10 Tf
+54 514 Td (The key helps React identify which list item changed.) Tj
+-54 -514 Td
+/F3 10 Tf
+54 498 Td () Tj
+-54 -498 Td
+/F3 10 Tf
+54 482 Td (Interview answer:) Tj
+-54 -482 Td
+/F3 10 Tf
+54 466 Td () Tj
+-54 -466 Td
+/F3 10 Tf
+66 450 Td (A key helps React efficiently update list items by giving each rendered item a) Tj
+-66 -450 Td
+/F3 10 Tf
+66 434 Td (stable identity.) Tj
+-66 -434 Td
+/F3 10 Tf
+54 418 Td () Tj
+-54 -418 Td
+/F1 15 Tf
+54 402 Td (8. What Is Done Now?) Tj
+-54 -402 Td
+/F3 10 Tf
+54 378 Td () Tj
+-54 -378 Td
+/F3 10 Tf
+54 362 Td (Done:) Tj
+-54 -362 Td
+/F3 10 Tf
+54 346 Td () Tj
+-54 -346 Td
+/F3 10 Tf
+54 330 Td (- Login page) Tj
+-54 -330 Td
+/F3 10 Tf
+54 314 Td (- Signup page) Tj
+-54 -314 Td
+/F3 10 Tf
+54 298 Td (- Dashboard page) Tj
+-54 -298 Td
+/F3 10 Tf
+54 282 Td (- Frontend-only login simulation) Tj
+-54 -282 Td
+/F3 10 Tf
+54 266 Td (- Logout button) Tj
+-54 -266 Td
+/F3 10 Tf
+54 250 Td (- Basic progress UI) Tj
+-54 -250 Td
+/F3 10 Tf
+54 234 Td (- Recommended problems UI) Tj
+-54 -234 Td
+/F3 10 Tf
+54 218 Td () Tj
+-54 -218 Td
+/F3 10 Tf
+54 202 Td (Not done yet:) Tj
+-54 -202 Td
+/F3 10 Tf
+54 186 Td () Tj
+-54 -186 Td
+/F3 10 Tf
+54 170 Td (- Real authentication) Tj
+-54 -170 Td
+/F3 10 Tf
+54 154 Td (- Backend API) Tj
+-54 -154 Td
+/F3 10 Tf
+54 138 Td (- MongoDB) Tj
+-54 -138 Td
+/F3 10 Tf
+54 122 Td (- Problem tracker CRUD) Tj
+-54 -122 Td
+/F3 10 Tf
+54 106 Td (- Real analytics) Tj
+-54 -106 Td
+/F3 10 Tf
+54 90 Td (- Gemini AI integration) Tj
+-54 -90 Td
+/F3 10 Tf
+54 74 Td () Tj
+-54 -74 Td
+/F3 9 Tf
+520 28 Td (15) Tj
+ET
+endstream
+endobj
+35 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 34 0 R >>
+endobj
+36 0 obj
+<< /Length 783 >>
+stream
+BT
+/F1 15 Tf
+54 760 Td (9. Interview Summary For Dashboard) Tj
+-54 -760 Td
+/F3 10 Tf
+54 736 Td () Tj
+-54 -736 Td
+/F3 10 Tf
+54 720 Td (You can say:) Tj
+-54 -720 Td
+/F3 10 Tf
+54 704 Td () Tj
+-54 -704 Td
+/F3 10 Tf
+66 688 Td (I built a Dashboard component that appears after a successful login or signup.) Tj
+-66 -688 Td
+/F3 10 Tf
+66 672 Td (I used React state in App.jsx to simulate authentication and conditionally) Tj
+-66 -672 Td
+/F3 10 Tf
+66 656 Td (render the Dashboard. The Dashboard currently uses static sample data for) Tj
+-66 -656 Td
+/F3 10 Tf
+66 640 Td (progress, recommendations, and activity. I used .map\(\) to render repeated UI) Tj
+-66 -640 Td
+/F3 10 Tf
+66 624 Td (lists and added a logout button to return to the login flow.) Tj
+-66 -624 Td
+/F3 9 Tf
+520 28 Td (16) Tj
+ET
+endstream
+endobj
+37 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 36 0 R >>
+endobj
+xref
+0 38
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000220 00000 n 
+0000000295 00000 n 
+0000000363 00000 n 
+0000000433 00000 n 
+0000002895 00000 n 
+0000003041 00000 n 
+0000005458 00000 n 
+0000005604 00000 n 
+0000007950 00000 n 
+0000008098 00000 n 
+0000010770 00000 n 
+0000010918 00000 n 
+0000013273 00000 n 
+0000013421 00000 n 
+0000016032 00000 n 
+0000016180 00000 n 
+0000018743 00000 n 
+0000018891 00000 n 
+0000021075 00000 n 
+0000021223 00000 n 
+0000023775 00000 n 
+0000023923 00000 n 
+0000026376 00000 n 
+0000026524 00000 n 
+0000029208 00000 n 
+0000029356 00000 n 
+0000031982 00000 n 
+0000032130 00000 n 
+0000034385 00000 n 
+0000034533 00000 n 
+0000037174 00000 n 
+0000037322 00000 n 
+0000039680 00000 n 
+0000039828 00000 n 
+0000040663 00000 n 
+trailer
+<< /Size 38 /Root 1 0 R >>
+startxref
+40811
+%%EOF

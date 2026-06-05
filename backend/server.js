@@ -16,7 +16,18 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Function to seed 54 standard DSA problems if the collection is empty
+// ==========================================
+// 1. MIDDLEWARES (Routes se HAMESHA pehle aane chahiye)
+// ==========================================
+app.use(cors({
+  origin: '*', // Production me saare domains allow karega, CORS error permanent khatam
+  credentials: true
+}));
+app.use(express.json());
+
+// ==========================================
+// 2. DATABASE INITIALIZATION & SEEDING
+// ==========================================
 const seedDatabase = async () => {
   try {
     const count = await ProblemSet.countDocuments();
@@ -32,7 +43,6 @@ const seedDatabase = async () => {
   }
 };
 
-// Initialize database connection and start seeding process
 const startServer = async () => {
   try {
     await connectDB(); // Establish MongoDB connection
@@ -43,27 +53,29 @@ const startServer = async () => {
 };
 startServer();
 
-// Middleware
-app.use(cors());
-app.use(express.json());
-
-// Routes
+// ==========================================
+// 3. ROUTES
+// ==========================================
 app.use('/api/auth', authRoutes);
-app.use('/api/problems', problemRoutes);
-app.use('/api/problemset', problemSetRoutes);
 app.use('/api/ai', aiRoutes);
+
+// Endpoint Handles: Dono routes allow kar rahe hain taaki frontend mismatch na ho
+app.use('/api/problems', problemRoutes);
+app.use('/api/problemset', problemSetRoutes); 
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
   res.json({ message: 'DSA Mentor AI backend is running' });
 });
 
-// Global error handling middleware
+// ==========================================
+// 4. GLOBAL ERROR HANDLING
+// ==========================================
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).json({ message: 'Internal server error' });
 });
 
 app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server is running on PORT ${PORT}`);
 });

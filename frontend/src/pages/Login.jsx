@@ -23,6 +23,15 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // ---- EMAIL VALIDATION HERE ----
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast.error('Please enter a valid email address!');
+      return; // Agar email sahi nahi hai toh code yahi ruk jayega
+    }
+    // -------------------------------
+
     setLoading(true);
 
     try {

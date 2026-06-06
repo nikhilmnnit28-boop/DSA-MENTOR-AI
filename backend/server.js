@@ -50,14 +50,13 @@ startServer();
 
 app.use('/api/auth', authRoutes);
 app.use('/api/ai', aiRoutes);
-app.use('/api/problems', problemRoutes);
+app.use('/api/problems', problemSetRoutes);
 app.use('/api/problemset', problemSetRoutes); 
 
 app.get('/api/health', (req, res) => {
   res.json({ message: 'DSA Mentor AI backend is running' });
 });
 
-// ✅ SEED ENDPOINT - Problems manually seed karne ke liye
 app.get('/api/seed', async (req, res) => {
   try {
     await ProblemSet.deleteMany({});

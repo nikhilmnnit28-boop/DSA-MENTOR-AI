@@ -2,37 +2,37 @@
 
 > An AI-powered Data Structures & Algorithms learning assistant that helps users track, practice, and master DSA concepts.
 
-## 🎯 Features
+##  Features
 
 ### Dashboard
-- 📊 Real-time statistics (total solved, by difficulty)
-- 📈 Progress tracking and streak counter
-- 🎯 Recent problems overview
-- ⚡ Quick add problem button
+-  Real-time statistics (total solved, by difficulty)
+-  Progress tracking and streak counter
+-  Recent problems overview
+-  Quick add problem button
 
 ### Problems Management
-- 📋 Full CRUD operations for problems
-- 🔍 Advanced filtering (difficulty, topic, status, platform)
-- 🏷️ Color-coded difficulty and status badges
-- 📱 Responsive table/list view
-- 💾 Persistent storage with MongoDB
+-  Full CRUD operations for problems
+-  Advanced filtering (difficulty, topic, status, platform)
+-  Color-coded difficulty and status badges
+-  Responsive table/list view
+-  Persistent storage with MongoDB
 
 ### Analytics Dashboard
-- 📊 Pie chart - Problems by difficulty
-- 📈 Bar chart - Problems by topic
-- 📉 Activity timeline (last 30 days)
-- 📊 Statistics cards with percentages
+-  Pie chart - Problems by difficulty
+-  Bar chart - Problems by topic
+-  Activity timeline (last 30 days)
+-  Statistics cards with percentages
 
 ### AI Mentor
-- 💡 **Explain Concept** - Get detailed explanations for DSA topics with examples
-- 🤖 **Get Recommendations** - Personalized problem recommendations based on your weak topics
-- 🔗 Integration with Google Gemini API for intelligent responses
+-  **Explain Concept** - Get detailed explanations for DSA topics with examples
+-  **Get Recommendations** - Personalized problem recommendations based on your weak topics
+-  Integration with Google Gemini API for intelligent responses
 
 ### Authentication
-- 🔐 JWT-based authentication (7-day expiry)
-- 🔒 Secure password hashing (bcryptjs)
-- 👤 User-specific data isolation
-- 📱 Protected routes and auto-redirect
+-  JWT-based authentication (7-day expiry)
+-  Secure password hashing (bcryptjs)
+-  User-specific data isolation
+-  Protected routes and auto-redirect
 
 ## 🛠️ Tech Stack
 
@@ -106,7 +106,7 @@ Start development server:
 npm run dev
 ```
 
-## 📚 API Documentation
+##  API Documentation
 
 ### Authentication Endpoints
 
@@ -170,7 +170,7 @@ npm run dev
 }
 ```
 
-## 🎨 UI/UX Features
+##  UI/UX Features
 
 ### Design System
 - **Dark Theme**: Slate 950 background (#0f172a)
@@ -188,7 +188,7 @@ npm run dev
 - Loading states
 - Chart visualizations
 
-## 📊 Database Schema
+##  Database Schema
 
 ### User Collection
 ```javascript
@@ -220,7 +220,7 @@ npm run dev
 }
 ```
 
-## 🚀 Deployment
+##  Deployment
 
 ### Frontend (Vercel)
 1. Push to GitHub
@@ -234,17 +234,17 @@ npm run dev
 3. Set environment variables
 4. Deploy
 
-## 🔒 Security Features
+## Security Features
 
-- ✅ Password hashing with bcryptjs (10 salt rounds)
-- ✅ JWT token validation
-- ✅ CORS protection
-- ✅ Input validation & sanitization
-- ✅ Environment variable protection
-- ✅ Protected API routes
-- ✅ User data isolation
+-  Password hashing with bcryptjs (10 salt rounds)
+-  JWT token validation
+-  CORS protection
+-  Input validation & sanitization
+-  Environment variable protection
+-  Protected API routes
+-  User data isolation
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### MongoDB Connection Issues
 - Verify connection string format
@@ -261,26 +261,26 @@ npm run dev
 - Verify frontend URL in CORS config
 - Update for production domain
 
-## 📈 Future Enhancements
+##  Future Enhancements
 
-- [ ] Problem difficulty suggestions
-- [ ] Code submission and execution
-- [ ] Discussion forum for problems
-- [ ] Video tutorials integration
-- [ ] Mobile app version
-- [ ] Social features (friends, leaderboard)
-- [ ] Interview prep mode
-- [ ] Custom study schedules
+-  Problem difficulty suggestions
+-  Code submission and execution
+-  Discussion forum for problems
+-  Video tutorials integration
+-  Mobile app version
+-  Social features (friends, leaderboard)
+-  Interview prep mode
+-  Custom study schedules
 
-## 📝 License
+##  License
 
 MIT License - feel free to use this project for your learning!
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions welcome! Please feel free to submit a Pull Request.
 
-## 📞 Support
+##  Support
 
 For issues and questions:
 1. Check the troubleshooting section
@@ -288,6 +288,3 @@ For issues and questions:
 3. Check browser console for errors
 4. Monitor backend logs
 
----
-
-**Built with ❤️ for developers learning DSA**
